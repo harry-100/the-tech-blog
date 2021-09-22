@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const sequelize = require('../../config/connection.js');
+const sequelize = require('../../config/connection');
 const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
@@ -13,6 +13,7 @@ router.get('/', (req, res) => {
             'post_text',
             'created_at'
         ],
+        order: [['created_at', 'DESC']],
         include: [
             {
                 model: Comment,
@@ -113,7 +114,7 @@ router.put('/:id', withAuth, (req, res) =>{
     });
 });
 
-router.delete.apply('/:id', withAuth, (req, res) =>{
+router.delete('/:id', withAuth, (req, res) =>{
     Post.destroy({
         where: {
             id: req.params.id

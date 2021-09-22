@@ -27,9 +27,7 @@ const userData = [
         password: 'pass123'
     }
 ];
-console.log("the user data is ", userData);
-console.log("user is", User);
-// const seedUsers = () => User.bulkCreate(userData);
+
 const seedUsers = () => User.bulkCreate(userData, {individualHooks: true});
 
 seedUsers();
