@@ -8,7 +8,7 @@
 
 ## Description
 
-This project creates backend of an e-commerce site. It uses Express.js API and uses Sequelize to interact with a MySQL database. All the RESTful CRUD operations can be performed to get the required information. 
+This app is about tech blog where users can add or edit their blogs. Users need to register to create a blog or comment on the blogs created by others. Simply navigate to login page to get started. It uses express.js, mysql, hnadlebars and javaSCript/html/css. 
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ This project creates backend of an e-commerce site. It uses Express.js API and u
 * [Questions](#Questions)
 
 ## Usage
-This app can be invoked using `node server.js` on the terminal. Insomnia has been used to demonstrate the functionality. Complete overview of the app in action is presented in the walkthrough video, the link of which is given above.
+This app is deployed on heroku. It can be invoked by clicking on the url provided above. 
 
 ## License
 This application is covered under [MIT](
