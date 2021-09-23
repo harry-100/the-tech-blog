@@ -80,6 +80,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
+    background-color: #fcba03;
   }
   
   header h1 {
@@ -131,17 +132,9 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
+    color: red;
   }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
+    
   .comment-form {
     margin-bottom: 5%;
   }
@@ -175,4 +168,6 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+    background-color: #fcba03;
+    font-weight: 600;
   }

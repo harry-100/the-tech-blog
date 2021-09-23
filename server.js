@@ -1,3 +1,4 @@
+//  import modules
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -9,6 +10,7 @@ const PORT = process.env.PORT || 3001;
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+//  session settings
 const sess = {
     secret: process.env.SESS_SECRET,
     cookie: {},
@@ -28,6 +30,7 @@ const hbs = exphbs.create({ helpers });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+//  middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
