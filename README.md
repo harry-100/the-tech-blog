@@ -4,11 +4,11 @@
 
 ## [Heroku Deployed App Url](https://harrys-tech-blog.herokuapp.com/)
 
-## [GitHub Url](https://github.com/harry-100/e-commerce-backend)
+## [GitHub Url](https://github.com/harry-100/the-tech-blog)
 
 ## Description
 
-This app is about tech blog where users can add or edit their blogs. Users need to register to create a blog or comment on the blogs created by others. Simply navigate to login page to get started. It uses express.js, mysql, hnadlebars and javaSCript/html/css. 
+This app is about tech blog where users can add or edit their blogs. Users need to register to create a blog or comment on the blogs created by others. Simply navigate to login page to get started. It uses express.js, mysql, handlebars and javaSCript/html/css. 
 
 ## Table of Contents
 
